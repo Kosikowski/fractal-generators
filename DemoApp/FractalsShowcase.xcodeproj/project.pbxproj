@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC99A8FC2D8732C00007B92D /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = BC99A8FB2D8732C00007B92D /* ComplexModule */; };
+		BC99A8FE2D8732C00007B92D /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = BC99A8FD2D8732C00007B92D /* Numerics */; };
+		BC99A9002D8732C00007B92D /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = BC99A8FF2D8732C00007B92D /* RealModule */; };
+		BC99A9032D8732D00007B92D /* FractalGenerators in Frameworks */ = {isa = PBXBuildFile; productRef = BC99A9022D8732D00007B92D /* FractalGenerators */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC99A8DE2D87326A0007B92D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC99A8C42D8732680007B92D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC99A8CB2D8732680007B92D;
+			remoteInfo = Mandelbrot;
+		};
+		BC99A8E82D87326A0007B92D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC99A8C42D8732680007B92D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC99A8CB2D8732680007B92D;
+			remoteInfo = Mandelbrot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC99A8CC2D8732680007B92D /* FractalsShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalsShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC99A8DD2D87326A0007B92D /* FractalsShowcaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalsShowcaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC99A8E72D87326A0007B92D /* FractalsShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalsShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BC99A8CE2D8732680007B92D /* FractalsShowcase */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FractalsShowcase;
+			sourceTree = "<group>";
+		};
+		BC99A8E02D87326A0007B92D /* FractalsShowcaseTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FractalsShowcaseTests;
+			sourceTree = "<group>";
+		};
+		BC99A8EA2D87326A0007B92D /* FractalsShowcaseUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FractalsShowcaseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC99A8C92D8732680007B92D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC99A8FE2D8732C00007B92D /* Numerics in Frameworks */,
+				BC99A8FC2D8732C00007B92D /* ComplexModule in Frameworks */,
+				BC99A9002D8732C00007B92D /* RealModule in Frameworks */,
+				BC99A9032D8732D00007B92D /* FractalGenerators in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC99A8DA2D87326A0007B92D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC99A8E42D87326A0007B92D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC99A8C32D8732680007B92D = {
+			isa = PBXGroup;
+			children = (
+				BC99A8CE2D8732680007B92D /* FractalsShowcase */,
+				BC99A8E02D87326A0007B92D /* FractalsShowcaseTests */,
+				BC99A8EA2D87326A0007B92D /* FractalsShowcaseUITests */,
+				BC99A8CD2D8732680007B92D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC99A8CD2D8732680007B92D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC99A8CC2D8732680007B92D /* FractalsShowcase.app */,
+				BC99A8DD2D87326A0007B92D /* FractalsShowcaseTests.xctest */,
+				BC99A8E72D87326A0007B92D /* FractalsShowcaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC99A8CB2D8732680007B92D /* FractalsShowcase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC99A8F12D87326A0007B92D /* Build configuration list for PBXNativeTarget "FractalsShowcase" */;
+			buildPhases = (
+				BC99A8C82D8732680007B92D /* Sources */,
+				BC99A8C92D8732680007B92D /* Frameworks */,
+				BC99A8CA2D8732680007B92D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC99A8CE2D8732680007B92D /* FractalsShowcase */,
+			);
+			name = FractalsShowcase;
+			packageProductDependencies = (
+				BC99A8FB2D8732C00007B92D /* ComplexModule */,
+				BC99A8FD2D8732C00007B92D /* Numerics */,
+				BC99A8FF2D8732C00007B92D /* RealModule */,
+				BC99A9022D8732D00007B92D /* FractalGenerators */,
+			);
+			productName = Mandelbrot;
+			productReference = BC99A8CC2D8732680007B92D /* FractalsShowcase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC99A8DC2D87326A0007B92D /* FractalsShowcaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC99A8F42D87326A0007B92D /* Build configuration list for PBXNativeTarget "FractalsShowcaseTests" */;
+			buildPhases = (
+				BC99A8D92D87326A0007B92D /* Sources */,
+				BC99A8DA2D87326A0007B92D /* Frameworks */,
+				BC99A8DB2D87326A0007B92D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC99A8DF2D87326A0007B92D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC99A8E02D87326A0007B92D /* FractalsShowcaseTests */,
+			);
+			name = FractalsShowcaseTests;
+			packageProductDependencies = (
+			);
+			productName = MandelbrotTests;
+			productReference = BC99A8DD2D87326A0007B92D /* FractalsShowcaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC99A8E62D87326A0007B92D /* FractalsShowcaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC99A8F72D87326A0007B92D /* Build configuration list for PBXNativeTarget "FractalsShowcaseUITests" */;
+			buildPhases = (
+				BC99A8E32D87326A0007B92D /* Sources */,
+				BC99A8E42D87326A0007B92D /* Frameworks */,
+				BC99A8E52D87326A0007B92D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC99A8E92D87326A0007B92D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC99A8EA2D87326A0007B92D /* FractalsShowcaseUITests */,
+			);
+			name = FractalsShowcaseUITests;
+			packageProductDependencies = (
+			);
+			productName = MandelbrotUITests;
+			productReference = BC99A8E72D87326A0007B92D /* FractalsShowcaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC99A8C42D8732680007B92D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					BC99A8CB2D8732680007B92D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					BC99A8DC2D87326A0007B92D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = BC99A8CB2D8732680007B92D;
+					};
+					BC99A8E62D87326A0007B92D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = BC99A8CB2D8732680007B92D;
+					};
+				};
+			};
+			buildConfigurationList = BC99A8C72D8732680007B92D /* Build configuration list for PBXProject "FractalsShowcase" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC99A8C32D8732680007B92D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BC99A8FA2D8732C00007B92D /* XCRemoteSwiftPackageReference "swift-numerics" */,
+				BC99A9012D8732D00007B92D /* XCLocalSwiftPackageReference "../" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BC99A8CD2D8732680007B92D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC99A8CB2D8732680007B92D /* FractalsShowcase */,
+				BC99A8DC2D87326A0007B92D /* FractalsShowcaseTests */,
+				BC99A8E62D87326A0007B92D /* FractalsShowcaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC99A8CA2D8732680007B92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC99A8DB2D87326A0007B92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC99A8E52D87326A0007B92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC99A8C82D8732680007B92D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC99A8D92D87326A0007B92D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC99A8E32D87326A0007B92D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC99A8DF2D87326A0007B92D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC99A8CB2D8732680007B92D /* FractalsShowcase */;
+			targetProxy = BC99A8DE2D87326A0007B92D /* PBXContainerItemProxy */;
+		};
+		BC99A8E92D87326A0007B92D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC99A8CB2D8732680007B92D /* FractalsShowcase */;
+			targetProxy = BC99A8E82D87326A0007B92D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC99A8EF2D87326A0007B92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC99A8F02D87326A0007B92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BC99A8F22D87326A0007B92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FractalsShowcase/FractalsShowcase.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FractalsShowcase/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosikowski.Mandelbrot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC99A8F32D87326A0007B92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FractalsShowcase/FractalsShowcase.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FractalsShowcase/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosikowski.Mandelbrot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BC99A8F52D87326A0007B92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2R3LP995T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosikowski.MandelbrotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FractalsShowcase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FractalsShowcase";
+			};
+			name = Debug;
+		};
+		BC99A8F62D87326A0007B92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2R3LP995T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosikowski.MandelbrotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FractalsShowcase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FractalsShowcase";
+			};
+			name = Release;
+		};
+		BC99A8F82D87326A0007B92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2R3LP995T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosikowski.MandelbrotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Mandelbrot;
+			};
+			name = Debug;
+		};
+		BC99A8F92D87326A0007B92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2R3LP995T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kosikowski.MandelbrotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Mandelbrot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC99A8C72D8732680007B92D /* Build configuration list for PBXProject "FractalsShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC99A8EF2D87326A0007B92D /* Debug */,
+				BC99A8F02D87326A0007B92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC99A8F12D87326A0007B92D /* Build configuration list for PBXNativeTarget "FractalsShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC99A8F22D87326A0007B92D /* Debug */,
+				BC99A8F32D87326A0007B92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC99A8F42D87326A0007B92D /* Build configuration list for PBXNativeTarget "FractalsShowcaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC99A8F52D87326A0007B92D /* Debug */,
+				BC99A8F62D87326A0007B92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC99A8F72D87326A0007B92D /* Build configuration list for PBXNativeTarget "FractalsShowcaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC99A8F82D87326A0007B92D /* Debug */,
+				BC99A8F92D87326A0007B92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BC99A9012D8732D00007B92D /* XCLocalSwiftPackageReference "../" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC99A8FA2D8732C00007B92D /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC99A8FB2D8732C00007B92D /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC99A8FA2D8732C00007B92D /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		BC99A8FD2D8732C00007B92D /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC99A8FA2D8732C00007B92D /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		BC99A8FF2D8732C00007B92D /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC99A8FA2D8732C00007B92D /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+		BC99A9022D8732D00007B92D /* FractalGenerators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC99A9012D8732D00007B92D /* XCLocalSwiftPackageReference "../" */;
+			productName = FractalGenerators;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BC99A8C42D8732680007B92D /* Project object */;
+}
