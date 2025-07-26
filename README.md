@@ -77,7 +77,7 @@ Add FractalGenerators to your project dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/fractal-generators.git", from: "1.0.0")
+    .package(url: "https://github.com/Kosikowski/fractal-generators.git", from: "1.0.0")
 ]
 ```
 
