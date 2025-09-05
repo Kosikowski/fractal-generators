@@ -72,10 +72,10 @@ struct Mandelbrot2Generator: ImageFractalGenerator {
                 let color = mandelbrotColor(cx: cx, cy: cy, iterations: parameters.iterations)
 
                 let offset = (y * width + x) * 4
-                data[offset] = UInt8(color.redComponent * 255) // R
-                data[offset + 1] = UInt8(color.greenComponent * 255) // G
-                data[offset + 2] = UInt8(color.blueComponent * 255) // B
-                data[offset + 3] = UInt8(color.alphaComponent * 255) // A
+                data[offset] = UInt8(color.r * 255) // R
+                data[offset + 1] = UInt8(color.g * 255) // G
+                data[offset + 2] = UInt8(color.b * 255) // B
+                data[offset + 3] = UInt8(color.a * 255) // A
             }
         }
 
@@ -94,7 +94,7 @@ struct Mandelbrot2Generator: ImageFractalGenerator {
         }
     }
 
-    private func mandelbrotColor(cx: Double, cy: Double, iterations: Int) -> NSColor {
+    private func mandelbrotColor(cx: Double, cy: Double, iterations: Int) -> (r: Double, g: Double, b: Double, a: Double) {
         var z = Complex(0.0, 0.0)
         let c = Complex(cx, cy)
         var iter = 0
@@ -102,7 +102,8 @@ struct Mandelbrot2Generator: ImageFractalGenerator {
             z = z * z + c
             iter += 1
         }
-        let colorFactor = CGFloat(iter) / CGFloat(iterations)
-        return NSColor(hue: colorFactor, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+        let colorFactor = Double(iter) / Double(iterations)
+        let (r, g, b) = ColorUtils.hsvToRgb(h: colorFactor, s: 1.0, v: 1.0)
+        return (r, g, b, 1.0)
     }
 }

@@ -126,16 +126,14 @@ struct PlasmaFractalGenerator: ImageFractalGenerator {
         for x in 0 ..< dimension {
             for y in 0 ..< dimension {
                 let intensity = heightMap[x][y]
-                let hue = CGFloat(intensity)
-                let color = NSColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
-                let cgColor = color.cgColor
-                let components = cgColor.components!
+                let hue = intensity
+                let (r, g, b) = ColorUtils.hsvToRgb(h: hue, s: 1.0, v: 1.0)
 
                 let offset = (y * dimension + x) * 4
-                data[offset] = UInt8(components[0] * 255) // R
-                data[offset + 1] = UInt8(components[1] * 255) // G
-                data[offset + 2] = UInt8(components[2] * 255) // B
-                data[offset + 3] = UInt8(components[3] * 255) // A
+                data[offset] = UInt8(r * 255) // R
+                data[offset + 1] = UInt8(g * 255) // G
+                data[offset + 2] = UInt8(b * 255) // B
+                data[offset + 3] = UInt8(255) // A
             }
         }
 

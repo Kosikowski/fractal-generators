@@ -6,6 +6,7 @@
 //
 
 import ComplexModule
+import RealModule
 import CoreGraphics
 import Foundation
 import SwiftUI

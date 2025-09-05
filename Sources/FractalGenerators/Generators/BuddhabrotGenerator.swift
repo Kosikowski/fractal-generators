@@ -125,10 +125,10 @@ struct BuddhabrotGenerator: ImageFractalGenerator {
                 let color = buddhabrotColor(intensity: intensity)
 
                 let offset = (y * width + x) * 4
-                data[offset] = UInt8(color.redComponent * 255) // R
-                data[offset + 1] = UInt8(color.greenComponent * 255) // G
-                data[offset + 2] = UInt8(color.blueComponent * 255) // B
-                data[offset + 3] = UInt8(color.alphaComponent * 255) // A
+                data[offset] = UInt8(color.r * 255) // R
+                data[offset + 1] = UInt8(color.g * 255) // G
+                data[offset + 2] = UInt8(color.b * 255) // B
+                data[offset + 3] = UInt8(color.a * 255) // A
             }
         }
 
@@ -147,16 +147,17 @@ struct BuddhabrotGenerator: ImageFractalGenerator {
         }
     }
 
-    private func buddhabrotColor(intensity: Double) -> NSColor {
+    private func buddhabrotColor(intensity: Double) -> (r: Double, g: Double, b: Double, a: Double) {
         // Apply gamma correction and color mapping
         let gamma = 0.3
         let adjustedIntensity = pow(intensity, gamma)
 
-        // Create a warm, golden color scheme
-        let hue: CGFloat = 0.1 // Golden yellow
-        let saturation: CGFloat = 0.8
-        let brightness = CGFloat(adjustedIntensity)
+        // Create a warm, golden color scheme (HSV)
+        let hue = 0.1 // Golden yellow
+        let saturation = 0.8
+        let brightness = adjustedIntensity
 
-        return NSColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
+        let (r, g, b) = ColorUtils.hsvToRgb(h: hue, s: saturation, v: brightness)
+        return (r, g, b, 1.0)
     }
 }

@@ -76,10 +76,10 @@ struct NewtonFractalGenerator: ImageFractalGenerator {
                 let color = newtonColor(cx: cx, cy: cy, iterations: parameters.iterations, tolerance: parameters.tolerance)
 
                 let offset = (y * width + x) * 4
-                data[offset] = UInt8(color.redComponent * 255) // R
-                data[offset + 1] = UInt8(color.greenComponent * 255) // G
-                data[offset + 2] = UInt8(color.blueComponent * 255) // B
-                data[offset + 3] = UInt8(color.alphaComponent * 255) // A
+                data[offset] = UInt8(color.r * 255) // R
+                data[offset + 1] = UInt8(color.g * 255) // G
+                data[offset + 2] = UInt8(color.b * 255) // B
+                data[offset + 3] = UInt8(color.a * 255) // A
             }
         }
 
@@ -98,7 +98,7 @@ struct NewtonFractalGenerator: ImageFractalGenerator {
         }
     }
 
-    private func newtonColor(cx: Double, cy: Double, iterations: Int, tolerance: Double) -> NSColor {
+    private func newtonColor(cx: Double, cy: Double, iterations: Int, tolerance: Double) -> (r: Double, g: Double, b: Double, a: Double) {
         var z = Complex(cx, cy)
         var iter = 0
 
@@ -131,7 +131,7 @@ struct NewtonFractalGenerator: ImageFractalGenerator {
 
         let minDist = min(dist1, min(dist2, dist3))
 
-        var hue: CGFloat
+        var hue: Double
         if minDist == dist1 {
             hue = 0.0 // Red for root 1
         } else if minDist == dist2 {
@@ -141,8 +141,9 @@ struct NewtonFractalGenerator: ImageFractalGenerator {
         }
 
         let saturation = 1.0
-        let brightness = 1.0 - CGFloat(iter) / CGFloat(iterations)
+        let brightness = 1.0 - Double(iter) / Double(iterations)
 
-        return NSColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
+        let (r, g, b) = ColorUtils.hsvToRgb(h: hue, s: saturation, v: brightness)
+        return (r, g, b, 1.0)
     }
 }
