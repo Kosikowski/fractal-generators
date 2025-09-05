@@ -1,3 +1,6 @@
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FKosikowski%2Ffractal-generators%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Kosikowski/fractal-generators)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FKosikowski%2Ffractal-generators%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Kosikowski/fractal-generators)
+
 # FractalGenerators
 
 A comprehensive Swift package for generating and displaying mathematical fractals with a modern, type-safe architecture.
